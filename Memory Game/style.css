@@ -168,14 +168,12 @@ button:hover {
   margin: 0.6em 0 1em 0;
 }
 
-/* ===== Responsive: tablet ===== */
 @media (max-width: 768px) {
   html {
     font-size: 13px;
   }
 }
 
-/* ===== Responsive: mobile ===== */
 @media (max-width: 480px) {
   html {
     font-size: 10px;
@@ -190,7 +188,6 @@ button:hover {
   }
 }
 
-/* ===== Responsive: mobile kecil ===== */
 @media (max-width: 340px) {
   html {
     font-size: 8.5px;
