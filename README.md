@@ -1,4 +1,4 @@
-# Memory Card Game
+# Matching Card Game
 
 Game memory/matching card sederhana berbasis **HTML, CSS, dan Vanilla JavaScript** tanpa framework, tanpa build tools.
 
