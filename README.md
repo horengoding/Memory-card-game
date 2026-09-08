@@ -11,11 +11,11 @@ Memory Match Game adalah game web kasual yang dibuat menggunakan HTML, CSS, dan 
 
 1. Clone repo ini
    ```bash
-   git clone https://github.com/horengoding/Memory-card-game.git
+   git clone https://github.com/horengoding/Memory-match.git
    ```
 2. Masuk ke folder project
    ```bash
-   cd Memory-card-game/Memory-Game
+   cd Memory-Game
    ```
 3. Buka `index.html` langsung di browser, atau jalankan local server:
    ```bash
