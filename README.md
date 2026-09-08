@@ -36,7 +36,7 @@ Memory Game/
 ├── script.js
 ├── style.css
 ├── audio/
-└── (gambar-gambar kartu)
+└── images/
 ```
 
 ## 📄 Lisensi
