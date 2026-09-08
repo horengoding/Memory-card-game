@@ -2,7 +2,9 @@
 
 Memory Match Game adalah game web kasual yang dibuat menggunakan HTML, CSS, dan Vanilla JavaScript.
 
-🎃ver. [pampukin.netlify.app](https://pampukin.netlify.app/)
+🎃[pampukin.netlify.app](https://pampukin.netlify.app/)
+
+🐛[shngrc.netlify.app](https://shngrc.netlify.app)
 
 
 ## 🚀 Cara Menjalankan
