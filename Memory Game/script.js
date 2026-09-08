@@ -47,12 +47,12 @@ const timeGenerator = () => {
     minutes += 1;
     seconds = 0;
   }
+ 
   let secondsValue = seconds < 10 ? `0${seconds}` : seconds;
   let minutesValue = minutes < 10 ? `0${minutes}` : minutes;
   timeValue.innerHTML = `<span>Time:</span>${minutesValue}:${secondsValue}`;
 };
 
-//For calculating moves
 const movesCounter = () => {
   movesCount += 1;
   moves.innerHTML = `<span>Moves:</span>${movesCount}`;
@@ -75,6 +75,7 @@ const matrixGenerator = (cardValues, size = 4) => {
   cardValues = [...cardValues, ...cardValues];
   cardValues.sort(() => Math.random() - 0.5);
   for (let i = 0; i < size * size; i++) {
+
     gameContainer.innerHTML += `
      <div class="card-container" data-card-value="${cardValues[i].name}">
         <div class="card-before">?</div>
@@ -84,6 +85,8 @@ const matrixGenerator = (cardValues, size = 4) => {
      `;
   }
   gameContainer.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
+  
+  gameContainer.style.gridTemplateColumns = `repeat(${size},auto)`;
 
   cards = document.querySelectorAll(".card-container");
   cards.forEach((card) => {
@@ -145,6 +148,18 @@ levelButtons.forEach((btn) => {
 
     gameAudio.currentTime = 0;
     gameAudio.volume = 0.1;
+    
+    controls.classList.add("hide");
+    stopButton.classList.remove("hide");
+    
+    wrapper.classList.remove("size-4", "size-6");
+    wrapper.classList.add(`size-${size}`);
+    
+    interval = setInterval(timeGenerator, 1000);
+    moves.innerHTML = `<span>Moves:</span> ${movesCount}`;
+
+    
+    gameAudio.currentTime = 0;
     gameAudio.play().catch((error) => {
       console.log("Autoplay dicegah oleh browser:", error);
     });

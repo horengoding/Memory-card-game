@@ -160,14 +160,12 @@ button:hover {
   margin: 0.6em 0 1em 0;
 }
 
-/* ===== Responsive: tablet ===== */
 @media (max-width: 768px) {
   .wrapper {
     padding: 1.3em;
   }
 }
 
-/* ===== Responsive: mobile ===== */
 @media (max-width: 480px) {
   .wrapper {
     padding: 1em;
@@ -179,5 +177,11 @@ button:hover {
     text-align: center;
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media (max-width: 340px) {
+  html {
+    font-size: 8.5px;
   }
 }
