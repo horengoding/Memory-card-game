@@ -1,6 +1,6 @@
-# Matching Card Game
+# Memory Match Game
 
-Game memory/matching card sederhana berbasis **HTML, CSS, dan Vanilla JavaScript** tanpa framework, tanpa build tools.
+Memory Match Game adalah game web kasual yang dibuat menggunakan HTML, CSS, dan Vanilla JavaScript.
 
 🎃ver. [pampukin.netlify.app](https://pampukin.netlify.app/)
 
