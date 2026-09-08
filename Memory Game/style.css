@@ -22,9 +22,8 @@ body {
 }
 .wrapper {
   box-sizing: content-box;
-  width: 26.87em;
-  max-width: 92vw;
-  padding: 2.5em 3em;
+  width: min(94vw, 30em);
+  padding: 1.6em;
   background-color: var(--color-cream);
   position: absolute;
   transform: translate(-50%, -50%);
@@ -49,19 +48,12 @@ body {
 }
 .card-container {
   position: relative;
-  width: 6.25em;
-  height: 6.25em;
+  width: 100%;
+  aspect-ratio: 1 / 1;
   cursor: pointer;
 }
-.wrapper.size-6 {
-  width: 28.4em;
-}
-.wrapper.size-6 .card-container {
-  width: 4.2em;
-  height: 4.2em;
-}
 .wrapper.size-6 .card-before {
-  font-size: 1.9em;
+  font-size: 1.4em;
 }
 .card-before,
 .card-after {
@@ -170,29 +162,22 @@ button:hover {
 
 /* ===== Responsive: tablet ===== */
 @media (max-width: 768px) {
-  html {
-    font-size: 13px;
+  .wrapper {
+    padding: 1.3em;
   }
 }
 
 /* ===== Responsive: mobile ===== */
 @media (max-width: 480px) {
-  html {
-    font-size: 10px;
-  }
   .wrapper {
-    padding: 1.8em 1.5em;
+    padding: 1em;
+  }
+  .game-container {
+    gap: 0.4em;
   }
   .stats-container {
     text-align: center;
     display: flex;
     justify-content: space-between;
-  }
-}
-
-/* ===== Responsive: mobile kecil ===== */
-@media (max-width: 340px) {
-  html {
-    font-size: 8.5px;
   }
 }
